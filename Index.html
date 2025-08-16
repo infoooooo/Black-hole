@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Simulasi Lubang Hitam Interstellar</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <!-- Panel Kontrol UI -->
+    <div id="ui-panel">
+        <label>Intensitas Gravitasi:
+            <input type="range" id="gravSlider" min="0" max="100" value="50">
+        </label>
+        <label>Kecepatan Accretion:
+            <input type="range" id="accSpeed" min="0" max="100" value="50">
+        </label>
+        <label><input type="checkbox" id="toggleDNA" checked> Tampilkan DNA</label>
+        <label><input type="checkbox" id="toggleStars" checked> Tampilkan Bintang</label>
+        <label><input type="checkbox" id="toggleLabels" checked> Tampilkan Label Fisika</label>
+        <button id="helpButton">Bantuan</button>
+        <button id="muteButton">Mute</button>
+    </div>
+    <!-- Panel Bantuan -->
+    <div id="help-panel" class="hidden">
+        <h2>Panduan Ilmiah</h2>
+        <p><b>Hukum Gravitasi Newton:</b> Gaya gravitasi saling tarik-menarik antara massa berbanding lurus dengan massa dan berbanding terbalik kuadrat jaraknya. Model ini menjelaskan orbit planet dan gerak benda langit.</p>
+        <p><b>Relativitas Umum Einstein:</b> Gravitasi dijelaskan sebagai lengkungan ruang-waktu akibat massa. Lubang hitam adalah bukti nyata teori ini, dengan pengaruh gravitasi yang sangat kuat hingga melengkungkan cahaya.</p>
+        <p><b>Hukum Termodinamika I &amp; II:</b> Energi tidak dapat diciptakan atau dimusnahkan (I), dan entropi total alam selalu bertambah (II). Dalam lubang hitam, energi radiasi termal dan entropi horizon peristiwa penting dalam termodinamika.</p>
+        <p><b>Mekanika Kuantum:</b> Teori yang menjelaskan sifat partikel dan energi di skala atom/molekul. Lubang hitam juga melibatkan mekanika kuantum dalam studi radiasi Hawking dan struktur atomik materi.</p>
+        <p><b>Fungsi dan Struktur DNA:</b> DNA adalah molekul pembawa informasi genetik berbentuk heliks ganda. Basa nitrogen berpasangan (A-T, C-G) memungkinkan penyimpanan kode genetik dan pewarisan sifat biologis.</p>
+        <button id="closeHelp">Tutup</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
